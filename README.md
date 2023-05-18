@@ -8,3 +8,7 @@ Summer 2023.
 - [Content](https://github.com/hendraanggrian/IIT-CS455/tree/assets/)
 - [Assignments](assignments/)
 - [Schedule](.ical/)
+
+## Related repositories
+
+- PDF files generated with [markdown-pdf-styles](https://github.com/hendraanggrian/markdown-pdf-styles/)
