@@ -84,8 +84,19 @@ layer 4.
 
 | Layer | Duties |
 | --- | --- |
-| Application | |
+| Application | E-mail, web browsing, file transfer. |
 | Transport | Port addressing, segmentation and reassembly, connection control, flow control, error control. |
 | Network | Logical addressing, routing, internetworking, packetizing, fragmentation, address resolution. |
 | Data link | Framing, physical addressing, flow control, error control, access control. |
 | Physical | Physical characteristics of interfaces and media, representation of bits, data rate, synchronization of bits. |
+
+## OSI
+
+*The Open System Interconnection (OSI)* model was designed by the international
+organization for standardization. The OSI model is a theoretical model designed
+to show how a protocol stack should be implemented.
+
+| Layer | Description |
+| --- | --- |
+| Session | Establishes sessions between communicating applications on the communicating computers (devices). |
+| Presentation | Translates data to a standard format, manages encryption and data compression. |
