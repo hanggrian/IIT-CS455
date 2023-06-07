@@ -96,11 +96,15 @@ In **Manchester** encoding the duration of the bit is divided into two values.
 The voltage remains at one level during the first half and moves to the other
 level in the second half.
 
-### Differential Manchester
+In **Differential Manchester**, there is always a transition at the middle of
+the bit but the bit values are determined at the beginning of the bit. **If the
+next bit is $\bf 0$ there is inversion, if the next bit is $\bf 1$ there is
+none.**
 
-There is always a transition at the middle of the bit but the bit values are
-determined at the beginning of the bit. **If the next bit is $\bf 0$ there is
-inversion, if the next bit is $\bf 1$ there is none.**
+| | `0` | `1` |
+| --- | --- | --- |
+| Manchester | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/encoding_m_0.png) | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/encoding_m_1.png) |
+| Differential Manchester | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/encoding_dm_0.png) | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/encoding_dm_1.png) |
 
 ### Multilevel binary
 

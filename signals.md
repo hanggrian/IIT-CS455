@@ -2,6 +2,24 @@
 
 ## Analog signals
 
+### Sine waves
+
+Superposition of two sine waves:
+
+$$
+\begin{array}{rcl}
+  S & = & \displaystyle A . \sin(\frac{2 \pi}P + \alpha) \\
+  \sf position & = & \sf amplitude \times \sin(\frac{2 \pi}{period} + phase)
+\end{array}
+$$
+
+$$
+\begin{array}{rcl}
+  F & = & 2S \\
+  \sf superposition & = & \sf 2 \times position
+\end{array}
+$$
+
 ### Wavelength
 
 The wavelength is a distance a signal can travel in one period.
@@ -101,6 +119,15 @@ with an analog signal.
 Modulation allows us to use a **bandpass channel** &mdash; A channel with a
 bandwidth that does not start from $0$.
 
+## Amplification
+
+$$
+\begin{array}{rcl}
+  P_2 & = & P_1 . 10^{G / 10} \\
+  P_2 & = & P_1 . \sf 10^{gain / 10}
+\end{array}
+$$
+
 ## Transmission impairment
 
 Signal travels through transmission media which are not perfect. The
@@ -109,12 +136,19 @@ Three causes of impairment:
 
 ### Attenuation
 
-Attenuation means loss of energy, when a signal travels through a medium, it
+Attenuation means loss of energy. When a signal travels through a medium, it
 loses some of its energy to overcome the resistance of the medium.
 
 To show that a signal has lost or gained strength we use the UMT of the decibel.
 The decibel (dB) measures the **relative** strengths of the two signals or one
 signal at two different points.
+
+$$
+\begin{array}{rcl}
+  dB & = & L . D \\
+  \sf total \ loss & = & \sf loss \ per \ kilometer \times distance
+\end{array}
+$$
 
 $$
 dB = 10 . \log_{10}\frac{P_2}{P_1}
@@ -164,7 +198,10 @@ $$
 $SNR_{dB}$ is defined:
 
 $$
-SNR_{dB} = 10 \log_{10} SNR
+\begin{array}{rcl}
+  SNR_{dB} & = & 10 \log_{10} SNR \\
+  \sf (signal-to-noise \ ratio)_{dB} & = & 10 \log_{10} signal-to-noise \ ratio
+\end{array}
 $$
 
 ## Data rate limits
@@ -177,7 +214,7 @@ For a noiseless channel, the nyquist bit rate formula defines the
 $$
 \begin{array}{rcl}
   R & = & 2 . B . \log_2 L \\
-  \sf bit \ rate (in bps) & = & \sf 2 \times bandwidth \times \log_2 signal \ levels \ used
+  \sf bit \ rate (in \ bps) & = & \sf 2 \times bandwidth \times \log_2 signal \ levels \ used
 \end{array}
 $$
 
@@ -189,7 +226,7 @@ determine the **theoretical** highest data rate for a **noisy** channel:
 $$
 \begin{array}{rcl}
   C & = & B . \log_2{(1 + SNR)} \\
-  \sf capacity (in bps) & = & \sf bandwidth \times \log_2{(1 + signal-to-noise \ ratio)}
+  \sf capacity (in \ bps) & = & \sf bandwidth \times \log_2{(1 + signal-to-noise \ ratio)}
 \end{array}
 $$
 

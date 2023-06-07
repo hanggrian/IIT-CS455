@@ -59,15 +59,15 @@ Hunders of thousands of interconnected networks.
 
 ## ISP
 
-The national Internet Service Providers (ISP) are backbone networks created and
-maintained by specialized companies. To provide connectivity between end users,
-these backbone networks are connected by complex switching stations called
-Network Access Points (NAPs).
+The national *Internet Service Providers (ISP)* are backbone networks created
+and maintained by specialized companies. To provide connectivity between end
+users, these backbone networks are connected by complex switching stations
+called *Network Access Points (NAPs)*.
 
-| Coverage | Note |
+| Coverage | Description |
 | --- | --- |
-| Regional ISP | Smaller ISPs that are connected to one or more national ISPs. |
-| Local ISP | Provide direct service to the end users. They can be connected to regional ISPs or directly to national ISPs. |
+| Regional | Smaller ISPs that are connected to one or more national ISPs. |
+| Local | Provide direct service to the end users. They can be connected to regional ISPs or directly to national ISPs. |
 
 ## Layers
 
