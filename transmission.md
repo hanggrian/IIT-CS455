@@ -32,7 +32,7 @@ The relationship between data rate and signal rate:
 
 $$
 \begin{array}{rcl}
-  S & = & \frac{CN}{T} \\
+  S & = & \frac{CN}{T} \\\\
   \sf baud \ rate & = & \sf \frac{factor \times data \ rate (bps)}{data \ elements \ each \ signal}
 \end{array}
 $$

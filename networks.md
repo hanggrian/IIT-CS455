@@ -36,7 +36,7 @@ relationship of the links and devices to one another.
 
 $$
 \begin{array}{rcl}
-  w & = & \displaystyle \frac{n.(n-1)}{2} \\
+  w & = & \displaystyle \frac{n.(n-1)}{2} \\\\
   \sf WAN \ links & = & \sf \frac{sites.(sites-1)}{2}
 \end{array}
 $$
