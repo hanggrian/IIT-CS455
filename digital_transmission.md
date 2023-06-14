@@ -1,4 +1,4 @@
-# Transmission
+# Digital transmission
 
 ## Digital-to-digital conversion
 
@@ -17,7 +17,7 @@ Line coding is the process of converting digital data to digital signals.
 | What we need to send. | What we can send. |
 | Are being carried. | Are the carriers. |
 
-### Data rate vs signal rate
+#### Data rate vs signal rate
 
 The data rate defines the number of data elements sent in 1s (bit rate). The
 **signal rate** is called the **baud rate**.
@@ -47,7 +47,7 @@ The receiver calculates a running average of the received signal power. This
 average is called the baseline. The incoming signal power is evaluated against
 this baseline to determine the value of the data element.
 
-### DC component
+#### DC component
 
 The voltage level of a signal is constant.
 
@@ -60,12 +60,14 @@ intervals must correspond exactly to the sender's bit intervals. If the
 receiver's clock is faster or slower, the bit intervals are not matched and the
 receiver might misinterpret the signals.
 
-### Self-synchronization
+#### Self-synchronization
 
 Self-synchronization can be achieved if there are transitions in the signal that
 alert the receiver to the beginning, middle, or the end of the pulse.
 
-### Unipolar scheme
+### Line coding schemes
+
+#### Unipolar scheme
 
 In a unipolar scheme, all the signal levels are on one side of the time axis,
 either above or below.
@@ -74,13 +76,13 @@ A unipolar scheme was designed as a *Non-Return-to-Zero (NRZ)* scheme in which
 the positive voltage defines bit $1$ and the zero voltage defines bit $0$. It is
 called NRZ because the signal does not return to zero at the middle of the bit.
 
-### Polar scheme
+#### Polar scheme
 
 In a **polar scheme**, the voltages are on **both sides of the same axis**. For
 example, the voltage level for $0$ can be positive and the voltage level for $1$
 can be negative.
 
-### Two versions of NRZ
+#### Two versions of NRZ
 
 | Variant | Description |
 | --- | --- |
@@ -90,7 +92,7 @@ can be negative.
 The *Return-to-Zero (RZ)* scheme uses three values: positive, negative, and
 zero. In RZ, the signal changes not between but during the bit.
 
-### Manchester
+#### Manchester
 
 In **Manchester** encoding the duration of the bit is divided into two values.
 The voltage remains at one level during the first half and moves to the other
@@ -106,23 +108,23 @@ none.**
 | Manchester | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/encoding_m_0.png) | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/encoding_m_1.png) |
 | Differential Manchester | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/encoding_dm_0.png) | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/encoding_dm_1.png) |
 
-### Multilevel binary
+#### Multilevel binary
 
 There are three voltage levels: positive, negative, and zero. The voltage level
 for one data element is zero, while the voltage level for the other element
 alternates between positive and negative.
 
-### AMI
+#### AMI
 
 *Alternate Mark Inversion (AMI)* a zero voltage represents binary $0$.
 Binary $1$ s are represented by alternating positive and negative voltages.
 
-### Pseudoternary
+#### Pseudoternary
 
 $1$ is encoded as zero voltage and the $0$ bit is encoded as alternating
 positive and negative voltages.
 
-### Multilevel schemes
+#### Multilevel schemes
 
 Let's increase the number of bits per baud by encoding a pattern of $m$ bits
 into a pattern of $n$ signal elements. We have two types of data elements
@@ -153,6 +155,85 @@ weight $-1$. If two groups of weight $1$ are encountered one after another, the
 first one is sent as is, while the next one is totally inverted to give a weight
 of $-1$.
 
+### Block coding
+
+Block coding can give us redundancy and improve the performance of line coding.
+Normally referred to as $\frac{m\textsf{ bits}}{n\textsf{ bits}}$ where $n > m$.
+
+#### 4B/5B
+
+In 4B/5B, the 5-bit output that replaces the 4-bit input has no more than one
+leading zero (left bit) and no more than two trailing zeros (right bits). There
+are no more than 3 consecutive zeros.
+
 ## Analog-to-digital conversion
 
-## Transmission modes
+1. The analog signal is sampled.
+2. The sampled signal is quantized.
+3. The quantized values are encoded as streams of bits.
+
+### Sampling
+
+The analog signal is sampled every $T$ s where $T$ s is every sampling period.
+
+### Nyquist theorem
+
+In order to reproduce the original analog signal the sampling rate must be at
+least twice the highest frequency in the original signal.
+
+| Analog signal | Bandwidth value |
+| --- | --- |
+| Low-pass | The same as the highest frequency. |
+| Bandpass | Lower than the value of maximum frequency. |
+
+> #### Example: Telephone
+>
+> $$
+  \begin{array}{rcl}
+    f_\textsf{max} & = & 4 \sf \ KHz \\\\
+    f_S & = & 4 . 4000 \\\\
+    & = & 8000 . \frac{\textsf{samples}}{S} \\\\
+    & = & 8000 . 8 \\\\
+    & = & \bf 64 \sf \ Kbps
+  \end{array}
+  $$
+
+### Quantization
+
+1. We assume that the original analog signal has ranges from $V_\textsf{min}$
+  to $V_\textsf{max}$.
+2. We divide this range into $L$ zones each of height $\Delta$.
+
+$$
+\Delta = \frac{V_\textsf{min}-V\textsf{max}}{L}
+$$
+
+3. We assign quantized values of $0$ to $L-1$ to the midpoint of each zone.
+4. We approximate the value of each sample by the quantized values.
+
+The choice of $L$, the number of levels depends on the range of the analog
+signal and how accurately we need to recover the signal.
+
+The output values are chosen to be the middle value in the zone which implies a
+quantization error.
+
+$$
+-\frac{\Delta}{2} \le \textsf{error} \le \frac{\Delta}{2}
+$$
+
+The quantization error affects the signal-to-noise ratio of the signal.
+
+#### Signal-to-quantization noise ratio
+
+$$
+\begin{array}{rcl}
+  SNR_{dB} & = & 6.02 \times B + 1.76 \sf \ dB \\\\
+  \sf depends \ on \ the \ num \ of \ quantization \ levels \ L & = & 6.02 \times \textsf{num of bits per sample} + 1.76 \sf \ dB
+\end{array}
+$$
+
+#### Original signal recovery
+
+The decoder first converts the code words into a pulse that holds the amplitude
+until the next pulse. The staircase signal is then passed through a low-pass
+filter. It smooths the staircase signal into an analog signal.

@@ -206,9 +206,9 @@ $$
 
 ## Data rate limits
 
-### Noiseless channel: Nyquist bit rate
+### Noiseless channel
 
-For a noiseless channel, the nyquist bit rate formula defines the
+For a noiseless channel, the **Nyquist bit rate formula** defines the
 **theoretical** maximum bit rate.
 
 $$
@@ -218,9 +218,9 @@ $$
 \end{array}
 $$
 
-### Noisy channel: Shannon capacity
+### Noisy channel
 
-In 1944, Claude Shannon introduced a formula called the **Shannon Capacity** to
+In 1944, Claude Shannon introduced a formula called the **Shannon capacity** to
 determine the **theoretical** highest data rate for a **noisy** channel:
 
 $$
