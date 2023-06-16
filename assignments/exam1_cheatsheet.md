@@ -9,6 +9,6 @@
 
 :[Signals](../signals.md)
 
-:[Transmission](../transmission.md)
+:[Digital transmission](../digital_transmission.md)
 
 :[Homework 1](hw1.md)

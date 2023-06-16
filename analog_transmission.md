@@ -198,12 +198,10 @@ angle, the vector makes with the $X$ axis is the phase of the signal element.
 
 ## Analog-to-analog conversion
 
-### Analog modulation
-
 Analog modulation is the representation of **analog information** by an **analog
 signal**. Modulation is needed if only a bandpass channel is available.
 
-### Amplitude modulation
+### AM
 
 In *amplitude modulation (AM)* transmission, the carrier signal is modulated so
 that its amplitude varies with the changing modulating signal. The frequency and
@@ -216,3 +214,18 @@ The *Federal Communication Commision (FCC)* allows $10$ KHz for each AM station.
 AM stations are allowed carrier frequencies between $530$ and $1700$ KHz, but
 each station carrier frequency must be separated from those on either side of it
 by at least $10$ KHz.
+
+### FM
+
+In *frequency modulation (FM)* transmission, the frequency of the carrier signal
+is modulated to follow the changing modulating signal.
+
+$$
+\begin{array}{rcl}
+  B_{FM} & = & 2(1+B) . B \\\\
+  & = & \sf 2(1+factor \ depending \ of \ modulation \ technique) . factor \ depending \ of \ modulation \ technique
+\end{array}
+$$
+
+The FCC allows $200$ KHz for each station. FM stations are allowed to use
+carrier frequencies between $88$ and $108$ MHz.
