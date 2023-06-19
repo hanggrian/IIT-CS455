@@ -86,4 +86,66 @@ If the multiplexer and the de-multiplexer are not synchronized, a bit belonging
 to one channel may be received by the wrong channel. For this reason, one or
 more synchronization bits are usually added to each frame.
 
-## Spreading
+### Digital hierarchy
+
+Telephone companies implement TDM through a hierarchy of digital signals called
+digital signal (DS) service of digital hierarchy.
+
+| Service | Description | Equation |
+| --- | --- | --- |
+| DS-0 | Single digital channel of $64$ Kbps. | $(2.400) . 8 \textsf{ bit} = 64,000 \sf\ bps$ |
+| DS-1 | $1,544$ Mbps source. | $$1,544 \textsf{ Mbps} = \underbrace{24 . 64 \textsf{ Kbps}}_\textsf{phone channels} + \underbrace{8 \textsf{ Kbps}}_\textsf{overhead}$$ |
+| DS-2 | $6,312$ Mbps source. | $6,312 \textsf{ Mbps} = 96 . 64 \textsf{ Kbps} + 168 \textsf{ Kbps}$ |
+| DS-3 | $44,376$ Mbps source. | $44,376 \textsf{ Mbps} = 672 . 64 \textsf{ Kbps} + 1,368 \textsf{ Kbps}$ |
+| DS-4 | $274,176$ Mbps source. | $274,176 \textsf{ Mbps} = 4,032 . 64 \textsf{ Kbps} + 16,128 \textsf{ Kbps}$ |
+
+### T line
+
+The telephone companies use T-lines to implement the DS services.
+
+$$
+\begin{array}{rcl}
+  24.8 + 1 & = & 193 \sf\ bits \\\\
+  1,544 \sf\ Mbps & = & 24 . 64 \textsf{ Kbps} + 8 \textsf{ Kbps}
+\end{array}
+$$
+
+E-lines are used in Europe.
+
+### Statistical TDM
+
+In statistical time-division multiplexing, slots are dynamically allocated to
+improve bandwidth efficiency. Only when an input line has data to send, it is
+given a slot in an output frame. The number of slots in each frame is less than
+the number of input lines.
+
+In statistical multiplexing, there is no fixed relationship between the inputs
+and outputs. We need to include the address of the receiver inside each slot.
+
+## Spread spectrum
+
+Spread spectrum is designed to be used in wireless applications. Stations must
+be able to spare the medium without interception by an eavesdropper and without
+being subject to jamming from a malicious intruder.
+
+Spread spectrum techniques spread the original spectrum needed for each station.
+The expanded bandwidth allows the service to leap its message in a **protective
+envelope** for a more secure transmission.
+
+### FHSS
+
+The **frequency hopping spread spectrum (FHSS)** technique uses $m$ different
+carrier frequencies that are modulated by the source signal. At one moment the
+signal modulates one carrier frequency, at the next moment the signal modulates
+another carrier frequency.
+
+A **pseudorandom code generator** creates a $k$-bit pattern for every hopping
+period $T_m$. The frequency table uses the pattern to find the frequency to be
+used for this hopping period and passes it to the frequency synthesizer. The
+frequency synthesizer creates a carrier signal of that frequency and the source
+signal modulates the carrier signal.
+
+If the number of hopping frequencies is $m$, we can multiplex $m$ channels by
+using the same $B_{SS}$ bandwidth. This is possitive because a station uses just
+one frequency in each hopping period. $m-1$ other frequencies can be used by
+other $m-1$ stations.

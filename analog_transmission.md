@@ -19,7 +19,7 @@ three mechanisms for connecting digital data into an analog signal.
 $$
 \begin{array}{rcl}
   S & = & \displaystyle \frac{N}{T} \\\\
-  \sf signal \ rate & = & \sf \frac{data \ rate}{num \ of \ data \ elements \ carried \ in \ one \ signal}
+  \sf signal\ rate & = & \sf \frac{data\ rate}{num\ of\ data\ elements\ carried\ in\ one\ signal}
 \end{array}
 $$
 
@@ -48,7 +48,7 @@ $$
 $$
 \begin{array}{rcl}
   B & = & (1+d).S \\\\
-  & = & \sf (1 + depends \ on \ modulation \ and \ filtering \ process) . signal \ rate
+  & = & \sf (1 + depends\ on\ modulation\ and\ filtering\ process) . signal\ rate
 \end{array}
 $$
 
@@ -85,7 +85,7 @@ and $f_2$.
 $$
 \begin{array}{rcl}
   B & = & (1+d).S + 2\Delta f \\\\
-  & = & \sf (1 + depends \ on \ modulation \ and \ filtering \ process) . signal \ rate + 2 . deviation \ from \ the \ carrier \ frequency
+  & = & \sf (1 + depends\ on\ modulation\ and\ filtering\ process) . signal\ rate + 2 . deviation\ from\ the\ carrier\ frequency
 \end{array}
 $$
 
@@ -110,7 +110,7 @@ $$
    0 & 1 & \qquad f_2 \\\\
    1 & 0 & \qquad f_3 \\\\
    1 & 1 & \qquad f_4
-\end{cases}\\\\
+\end{cases} \\\\
 2^4 = 16 \begin{cases}
    0 & 0 & 0 & 0 & \qquad f_1 \\\\
    \vdots & \vdots & \vdots & \vdots & \\\\
@@ -131,12 +131,12 @@ The bandwidth with $d=0$:
 $$
 \begin{array}{rcll}
   B & = & S+(L-1).S = L.S \\\\
-  & = & \sf S+(num \ of \ frequencies-1).S = num \ of \ frequencies . S
+  & = & \sf S+(num\ of\ frequencies-1).S = num\ of\ frequencies . S
 \end{array}
 $$
 
 $$
-\textsf{3 bits/signal}\\\\
+\textsf{3 bits/signal} \\\\
 2^3 = 8 \begin{cases}
    0 & 0 & 0 \\\\
    \vdots & \vdots & \vdots \\\\
@@ -145,7 +145,7 @@ $$
 $$
 
 $$
-\textsf{4 bits/signal}\\\\
+\textsf{4 bits/signal} \\\\
 2^4 = 16 \begin{cases}
    0 & 0 & 0 & 0\\\\
    \vdots & \vdots & \vdots & \vdots \\\\
@@ -223,7 +223,7 @@ is modulated to follow the changing modulating signal.
 $$
 \begin{array}{rcl}
   B_{FM} & = & 2(1+B) . B \\\\
-  & = & \sf 2(1+factor \ depending \ of \ modulation \ technique) . factor \ depending \ of \ modulation \ technique
+  & = & \sf 2(1+factor\ depending\ of\ modulation\ technique) . factor\ depending\ of\ modulation\ technique
 \end{array}
 $$
 

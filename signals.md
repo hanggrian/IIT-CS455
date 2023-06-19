@@ -27,7 +27,7 @@ The wavelength is a distance a signal can travel in one period.
 $$
 \begin{array}{rcl}
   \lambda & = & \displaystyle \frac{v}{f} \\\\
-  \sf wavelength & = & \sf \frac{propagation \ speed}{frequency}
+  \sf wavelength & = & \sf \frac{propagation\ speed}{frequency}
 \end{array}
 $$
 
@@ -39,7 +39,7 @@ $$
   \begin{array}{rcl}
     \lambda & = & \frac{v}{f} \\\\
     & = & \frac{3.10^8}{4.10^{14}} \\\\
-    & = & \bf 0,75 \sf \ mm
+    & = & \bf 0,75 \sf\ mm
   \end{array}
   $$
 
@@ -63,7 +63,7 @@ If a signal has $L$ levels, each level needs $\log_2{L}$ bits.
 $$
 \begin{array}{rcl}
   L & = & B^2 \\\\
-  \sf signal \ length & = & \sf bits^2
+  \sf signal\ length & = & \sf bits^2
 \end{array}
 $$
 
@@ -75,7 +75,7 @@ The bit rate is the number of bits sent in 1 s expressed in bits per second
 $$
 \begin{array}{rcl}
   B & = & F . R . P \\\\
-  \sf bits & = & \sf frames \times resolution \times bits \ per \ pixel
+  \sf bits & = & \sf frames \times resolution \times bits\ per\ pixel
 \end{array}
 $$
 
@@ -90,7 +90,7 @@ $$
 > $$
   \begin{array}{rcl}
     100 . 24 . 80 . 8 & = & \frac{1,536,000}{60} \\\\
-    & = & \bf 25,600 \sf \ bps
+    & = & \bf 25,600 \sf\ bps
   \end{array}
   $$
 
@@ -146,7 +146,7 @@ signal at two different points.
 $$
 \begin{array}{rcl}
   dB & = & L . D \\\\
-  \sf total \ loss & = & \sf loss \ per \ kilometer \times distance
+  \sf total\ loss & = & \sf loss\ per\ kilometer \times distance
 \end{array}
 $$
 
@@ -166,7 +166,7 @@ respectively.
     & = & 10 (\log\frac{P_3}{P_2} + \log\frac{P_2}{P_1}) \\\\
     & = & 10 \log\frac{P_3}{P_2} + 10 \log\frac{P_2}{P_1} \\\\
     & = & 10 - 3 \\\\
-    & = & \bf 7 \sf \ dB
+    & = & \bf 7 \sf\ dB
   \end{array}
   $$
 
@@ -191,7 +191,7 @@ The *Signal-to-Noise Ratio (SNR)* is actually the ratio of what is wanted
 $$
 \begin{array}{rcl}
   SNR & = & \displaystyle \frac{ASP}{ANP} \\\\
-  \sf signal-to-noise \ ratio & = & \sf \frac{average \ signal \ power}{average \ noise \ power}
+  \sf signal-to-noise\ ratio & = & \sf \frac{average\ signal\ power}{average\ noise\ power}
 \end{array}
 $$
 
@@ -200,7 +200,7 @@ $SNR_{dB}$ is defined:
 $$
 \begin{array}{rcl}
   SNR_{dB} & = & 10 \log_{10} SNR \\\\
-  \sf (signal-to-noise \ ratio)_{dB} & = & 10 \log_{10} signal-to-noise \ ratio
+  \sf (signal-to-noise\ ratio)_{dB} & = & 10 \log_{10} signal-to-noise\ ratio
 \end{array}
 $$
 
@@ -214,7 +214,7 @@ For a noiseless channel, the **Nyquist bit rate formula** defines the
 $$
 \begin{array}{rcl}
   R & = & 2 . B . \log_2 L \\\\
-  \sf bit \ rate (in \ bps) & = & \sf 2 \times bandwidth \times \log_2 signal \ levels \ used
+  \sf bit\ rate (in\ bps) & = & \sf 2 \times bandwidth \times \log_2 signal\ levels\ used
 \end{array}
 $$
 
@@ -226,7 +226,7 @@ determine the **theoretical** highest data rate for a **noisy** channel:
 $$
 \begin{array}{rcl}
   C & = & B . \log_2{(1 + SNR)} \\\\
-  \sf capacity (in \ bps) & = & \sf bandwidth \times \log_2{(1 + signal-to-noise \ ratio)}
+  \sf capacity (in\ bps) & = & \sf bandwidth \times \log_2{(1 + signal-to-noise\ ratio)}
 \end{array}
 $$
 
@@ -253,7 +253,7 @@ the source.
 $$
 \begin{array}{rcl}
   L & = & PT + TT + QT + PD \\\\
-  \sf latency & = & \sf propagation \ time + transmission \ time + queueing \ time + processing \ delay
+  \sf latency & = & \sf propagation\ time + transmission\ time + queueing\ time + processing\ delay
 \end{array}
 $$
 
@@ -265,7 +265,7 @@ destination.
 $$
 \begin{array}{rcl}
   PT & = & \displaystyle \frac{D}{PS} \\\\
-  \sf propagation \ time & = & \sf \frac{distance}{propagation \ speed}
+  \sf propagation\ time & = & \sf \frac{distance}{propagation\ speed}
 \end{array}
 $$
 
@@ -280,7 +280,7 @@ message and the bandwidth of the channel.
 $$
 \begin{array}{rcl}
   TT & = & \displaystyle \frac{MS}{B} \\\\
-  \sf transmission \ time & = & \sf \frac{message \ size}{bandwidth}
+  \sf transmission\ time & = & \sf \frac{message\ size}{bandwidth}
 \end{array}
 $$
 

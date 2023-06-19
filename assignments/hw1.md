@@ -27,7 +27,7 @@ $$
 \begin{array}{rcl}
   L & = & B^2 \\\\
   & = & 4^2 \\\\
-  & = & \bf 16 \sf \ levels
+  & = & \bf 16 \sf\ levels
 \end{array}
 $$
 
@@ -52,7 +52,7 @@ $$
 \begin{array}{rcl}
   B & = & F . R . P \\\\
   & = & 1 \times 1,200 \times 1,000 \times \log_{2}{1,026} \\\\
-  & = & \bf 12,000,000,000 \sf \ bits
+  & = & \bf 12,000,000,000 \sf\ bits
 \end{array}
 $$
 
@@ -143,7 +143,7 @@ $$
 \begin{array}{rcl}
   P_2 & = & P_1 . 10^{G / 10} \\\\
   & = & 1 \times 10^{10 / 10} \\\\
-  & = & \bf 10 \sf \ mW
+  & = & \bf 10 \sf\ mW
 \end{array}
 $$
 
@@ -154,7 +154,7 @@ $$
   P_3 & = & P_2 . 10^{G / 10} \\\\
   & = & 10 \times 10^{-(0.5 \times 10) / 10} \\\\
   & = & 10 \times 10^{-5 / 10} \\\\
-  & = & \bf 3.16 \sf \ mW
+  & = & \bf 3.16 \sf\ mW
 \end{array}
 $$
 
@@ -164,7 +164,7 @@ $$
 \begin{array}{rcl}
   P_4 & = & P_3 . 10^{G / 10} \\\\
   & = & 3.16 \times 10^{15 / 10} \\\\
-  & = & \bf 99.92 \sf \ mW
+  & = & \bf 99.92 \sf\ mW
 \end{array}
 $$
 
@@ -214,7 +214,7 @@ $$
   PT & = & \displaystyle \frac{D}{PS} \\\\
   & = & \frac{1,000 \textsf{ km}}{(2*10^8) \textsf{ m/s}} \\\\
   & = & \frac{1,000,000,000 \textsf{ cm}}{200,000,000 \textsf{ m/s}} \\\\
-  & = & \bf 5 \sf \ ms
+  & = & \bf 5 \sf\ ms
 \end{array}
 $$
 
@@ -225,7 +225,7 @@ $$
   TT & = & \displaystyle \frac{MS}{B} \\\\
   & = & \frac{2.5 \textsf{ Mb} \times 8}{5 \textsf{ Mbps}} \\\\
   & = & \frac{20 \textsf{ Mb}}{5 \textsf{ Mbps}} \\\\
-  & = & \bf 4 \sf \ s
+  & = & \bf 4 \sf\ s
 \end{array}
 $$
 
