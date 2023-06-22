@@ -12,7 +12,7 @@ more devices lined to the switch.
   dedicated during the entire duration of a phone call until the teardown phase.
 3. There is a continuous flow of data sent by the source station and received by
   the destination station.
-4. The switches route the data (call) based on their occupied band (FDM) or time
+4. The switches route the data (call) based on their occupied band (TDM) or time
   slot (FDM).
 
 ### Three phases

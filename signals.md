@@ -39,7 +39,7 @@ $$
   \begin{array}{rcl}
     \lambda & = & \frac{v}{f} \\\\
     & = & \frac{3.10^8}{4.10^{14}} \\\\
-    & = & \bf 0,75 \sf\ mm
+    & = & \bf 0,75 \sf \ mm
   \end{array}
   $$
 
@@ -90,7 +90,7 @@ $$
 > $$
   \begin{array}{rcl}
     100 . 24 . 80 . 8 & = & \frac{1,536,000}{60} \\\\
-    & = & \bf 25,600 \sf\ bps
+    & = & \bf 25,600 \sf \ bps
   \end{array}
   $$
 
@@ -166,7 +166,7 @@ respectively.
     & = & 10 (\log\frac{P_3}{P_2} + \log\frac{P_2}{P_1}) \\\\
     & = & 10 \log\frac{P_3}{P_2} + 10 \log\frac{P_2}{P_1} \\\\
     & = & 10 - 3 \\\\
-    & = & \bf 7 \sf\ dB
+    & = & \bf 7 \sf \ dB
   \end{array}
   $$
 

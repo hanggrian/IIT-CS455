@@ -186,15 +186,22 @@ least twice the highest frequency in the original signal.
 | Low-pass | The same as the highest frequency. |
 | Bandpass | Lower than the value of maximum frequency. |
 
+$$
+\begin{array}{rcl}
+  C & = & 2B / S \\\\
+  \sf \ bit\ rate & = & 2 \textsf{ bandwidth} / \sf bits\ per\ sample
+\end{array}
+$$
+
 > #### Example: Telephone
 >
 > $$
   \begin{array}{rcl}
-    f_\textsf{max} & = & 4 \sf\ KHz \\\\
+    f_\textsf{max} & = & 4 \sf \ KHz \\\\
     f_S & = & 4 . 4000 \\\\
     & = & 8000 . \frac{\textsf{samples}}{S} \\\\
     & = & 8000 . 8 \\\\
-    & = & \bf 64 \sf\ Kbps
+    & = & \bf 64 \sf \ Kbps
   \end{array}
   $$
 
@@ -227,8 +234,8 @@ The quantization error affects the signal-to-noise ratio of the signal.
 
 $$
 \begin{array}{rcl}
-  SNR_{dB} & = & 6.02 \times B + 1.76 \sf\ dB \\\\
-  \sf depends\ on\ the\ num\ of\ quantization\ levels\ L & = & 6.02 \times \textsf{num of bits per sample} + 1.76 \sf\ dB
+  SNR_{dB} & = & 6.02 \times B + 1.76 \sf \ dB \\\\
+  \sf depends\ on\ the\ num\ of\ quantization\ levels\ L & = & 6.02 \times \textsf{num of bits per sample} + 1.76 \sf \ dB
 \end{array}
 $$
 

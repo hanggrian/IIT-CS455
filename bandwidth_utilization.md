@@ -41,7 +41,7 @@ lines onto higher-bandwidth lines.
 ### TDM
 
 **Time division multiplexing (TDM)** is a digital process that allows several
-connections to share the high bandwidth of a link. INstead of sharing a portion
+connections to share the high bandwidth of a link. Instead of sharing a portion
 of the bandwidth as in FDM, **time is shared**. Each connection occupies a
 portion of time in the link.
 
@@ -55,13 +55,13 @@ The data rate of the output link must be in $n$ times higher than the data rate
 of a single input link to guarantee the flow of data.
 
 TDM can be visualized as two fast-rotating switches, one on the multiplexing
-side and the other on the de-multiplexing side. And the switch is
+side and the other on the demultiplexing side. And the switch is
 **unsynchronized** and rotate at the same speed but in positive direction.
 
 | Side | Description |
 | --- | --- |
 | Multiplexing | As the switch open in front of a connection, this connection can send a unit of data onto the link. This process is called interleaving. |
-| De-multiplexing | As the switch open, the connection can receive a unit of data from the link. |
+| Demultiplexing | As the switch open, the connection can receive a unit of data from the link. |
 
 If a source does not have data to send, the corresponding slot in the output
 frame is empty.
@@ -93,7 +93,7 @@ digital signal (DS) service of digital hierarchy.
 
 | Service | Description | Equation |
 | --- | --- | --- |
-| DS-0 | Single digital channel of $64$ Kbps. | $(2.400) . 8 \textsf{ bit} = 64,000 \sf\ bps$ |
+| DS-0 | Single digital channel of $64$ Kbps. | $(2.400) . 8 \textsf{ bit} = 64,000 \sf \ bps$ |
 | DS-1 | $1,544$ Mbps source. | $$1,544 \textsf{ Mbps} = \underbrace{24 . 64 \textsf{ Kbps}}_\textsf{phone channels} + \underbrace{8 \textsf{ Kbps}}_\textsf{overhead}$$ |
 | DS-2 | $6,312$ Mbps source. | $6,312 \textsf{ Mbps} = 96 . 64 \textsf{ Kbps} + 168 \textsf{ Kbps}$ |
 | DS-3 | $44,376$ Mbps source. | $44,376 \textsf{ Mbps} = 672 . 64 \textsf{ Kbps} + 1,368 \textsf{ Kbps}$ |
@@ -105,8 +105,8 @@ The telephone companies use T-lines to implement the DS services.
 
 $$
 \begin{array}{rcl}
-  24.8 + 1 & = & 193 \sf\ bits \\\\
-  1,544 \sf\ Mbps & = & 24 . 64 \textsf{ Kbps} + 8 \textsf{ Kbps}
+  24.8 + 1 & = & 193 \sf \ bits \\\\
+  1,544 \sf \ Mbps & = & 24 . 64 \textsf{ Kbps} + 8 \textsf{ Kbps}
 \end{array}
 $$
 
@@ -149,3 +149,10 @@ If the number of hopping frequencies is $m$, we can multiplex $m$ channels by
 using the same $B_{SS}$ bandwidth. This is possitive because a station uses just
 one frequency in each hopping period. $m-1$ other frequencies can be used by
 other $m-1$ stations.
+
+$$
+\begin{array}{rcl}
+  B_2 & = & B_1 . N \\\\
+  \sf bandwidth\ \#2 & = & \sf bandwidth\ \#1 \times num\ of\ pairs
+\end{array}
+$$

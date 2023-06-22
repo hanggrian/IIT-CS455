@@ -3,12 +3,12 @@
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$']] }, messageStyle: 'none' });</script>
 
-:[](../analog_transmission.md)
+:[Analog transmission](../analog_transmission.md)
 
-:[](../bandwidth_utilization.md)
+:[Bandwidth utilization](../bandwidth_utilization.md)
 
-:[](../switching.md)
+:[Switching](../switching.md)
 
-:[](../telephone_and_cable.md)
+:[Telephone and cable](../telephone_and_cable.md)
 
-:[](hw2.md)
+:[Homework 2](hw2.md)
