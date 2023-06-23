@@ -12,9 +12,9 @@
 
 | Advantages | Disadvantages |
 | --- | --- |
-| High redundancy because each connection is handled individually | Expensive and difficult to install and maintain |
-| Network expansion doesn't require setup or disruption | Network requires a high traffic capability |
-| No need for a centralized system | Consumes more power than other topologies |
+| High redundancy because each connection is handled individually. | Expensive and difficult to install and maintain. |
+| Network expansion doesn't require setup or disruption. | Network requires a high traffic capability. |
+| No need for a centralized system. | Consumes more power than other topologies. |
 
 ## Problem 2
 
@@ -240,4 +240,4 @@ Therefore, **propagation time is negligible**.
 
 ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/hw1_digital.png)
 
-[View full graph](https://github.com/hendraanggrian/IIT-CS455/blob/main/lines/hw1.drawio)
+[View diagram file](https://github.com/hendraanggrian/IIT-CS455/blob/main/lines/hw1.drawio)

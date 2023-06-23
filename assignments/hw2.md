@@ -81,8 +81,8 @@ their carriers and passing them to the output lines.
 $$
 \begin{array}{rcl}
   C & = & 2B . S \\\\
-  & = & 2.(100+200) \textsf{ KHz} / 5 \\\\
-  & = & 600 \textsf{ KHz} / 5 \\\\
+  & = & 2.(100+200) \textsf{ KHz} . 5 \\\\
+  & = & 600 \textsf{ KHz} . 5 \\\\
   & = & \bf 3,000 \sf \ kbps
 \end{array}
 $$

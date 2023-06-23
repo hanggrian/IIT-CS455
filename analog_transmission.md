@@ -2,6 +2,14 @@
 
 ## Digital-to-analog conversion
 
+| Modulation | Max bits | Modulation | Max bits |
+| ---: | :--- | ---: | :--- |
+| BPSK | $1$ | 8-PSK | $3$ |
+| QPSK | $2$ | 16-QAM | $4$ |
+| 4-QAM | $2$ | 16-PSK | $4$ |
+| D-BPSK | $1$ | 64-QAM | $6$ |
+| D-QPSK | $2$ | 32-PSK | $5$ |
+
 Digital-to-analog conversion is the process of changing one of the
 characteristics of an analog signal based on the information in digital data.
 
