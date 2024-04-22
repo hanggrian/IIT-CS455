@@ -37,12 +37,12 @@ $$
 > - $60$ kbps, 16-QAM
 > - $9000$ bps, QPSK
 
-| Bit rate | Baud rate |
-| --- | ---: |
-| $3000$ bps, BFSK | $3,000 \textsf{ bps}\ /\ 1 = \bf 3,000 \sf \ bps$ |
-| $50$ kbps, BASK | $50 \textsf{ kbps}\ /\ 1 = \bf 50 \sf \ kbps$ |
-| $60$ kbps, 16-QAM | $60 \textsf{ kbps}\ /\ 4 = \bf 15 \sf \ kbps$ |
-| $9000$ bps, QPSK | $9,000 \textsf{ bps}\ /\ 2 = \bf 4,500 \sf \ bps$ |
+Bit rate | Baud rate
+--- | ---:
+$3000$ bps, BFSK | $3,000 \textsf{ bps}\ /\ 1 = \bf 3,000 \sf \ bps$
+$50$ kbps, BASK | $50 \textsf{ kbps}\ /\ 1 = \bf 50 \sf \ kbps$
+$60$ kbps, 16-QAM | $60 \textsf{ kbps}\ /\ 4 = \bf 15 \sf \ kbps$
+$9000$ bps, QPSK | $9,000 \textsf{ bps}\ /\ 2 = \bf 4,500 \sf \ bps$
 
 ## Problem 4
 
@@ -100,12 +100,12 @@ of multipacket transmission. Therefore yes, they are unordered.
 > What are the basic differences between circuit switching and datagram
   switching?
 
-| | Circuit switching | Datagram switching |
-| --- | --- | --- |
-| Type | Connection-oriented | Connection-less |
-| Flow | Connection setup &rarr; Data transfer &rarr; Connection teardown | Carry header &rarr; Routing table &rarr; Forward packet |
-| Efficiency | **Bad** &mdash; Resources are allocated for the entire duration of the connection. | **Better** &mdash; Resources are allocated only when there are packets to be transferred. |
-| Delay | **Minimal** &mdash; Due to the time needed to create the connection, transfer data and disconnect the circuit. | **Significant** &mdash; Each packet may wait at a switch before it is forwarded. |
+| | Circuit switching | Datagram switching
+--- | --- | ---
+Type | Connection-oriented | Connection-less
+Flow | Connection setup &rarr; Data transfer &rarr; Connection teardown | Carry header &rarr; Routing table &rarr; Forward packet
+Efficiency | **Bad** &mdash; Resources are allocated for the entire duration of the connection. | **Better** &mdash; Resources are allocated only when there are packets to be transferred.
+Delay | **Minimal** &mdash; Due to the time needed to create the connection, transfer data and disconnect the circuit. | **Significant** &mdash; Each packet may wait at a switch before it is forwarded.
 
 ## Problem 10
 
@@ -113,10 +113,10 @@ of multipacket transmission. Therefore yes, they are unordered.
 
 The function of a dial-up modem is to modulate and demodulate.
 
-| Function | Conversion |
-| --- | --- |
-| Modulate | Binary data &rarr; Bandpass analog signal |
-| Demodulate | Modulated signal &rarr; Recovered binary data |
+Function | Conversion
+--- | ---
+Modulate | Binary data &rarr; Bandpass analog signal
+Demodulate | Modulated signal &rarr; Recovered binary data
 
 ## Problem 11
 

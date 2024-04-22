@@ -50,13 +50,13 @@ combination of simple sine waves with different frequencies, amplitudes, and
 phases.
 
 The frequency $f$ of the sine wave which is the same as the frequency of the
-composite signal is called the fundamental frequency or **first harmonic**.
+composite signal is called the fundamental frequency or **first harmonic.**
 
 ## Digital signals
 
 A digital signal is a composite signal with frequencies between $0$
 and $\infty$.
-We can transmit a digital signal by using **baseband** or **modulation**.
+We can transmit a digital signal by using **baseband** or **modulation.**
 
 If a signal has $L$ levels, each level needs $\log_2{L}$ bits.
 
@@ -81,7 +81,7 @@ $$
 
 > #### Example
 >
-> We need to download text documents at the rate of **100 pages per minute**.
+> We need to download text documents at the rate of **100 pages per minute.**
   What is the required bit rate of the channel?
 >
 > - 24 lines with 80 characters
@@ -98,10 +98,10 @@ $$
 
 The Fourier analysis can be used to decompose a digital signal.
 
-| Type | Description |
-| --- | --- |
-| Periodic | The decomposed signal has a frequency domain representation with an **infinite bandwidth and discrete frequencies**. |
-| Non-periodic | The decomposed signal still has an infinite bandwidth but the frequencies are continuous. |
+Type | Description
+--- | ---
+Periodic | The decomposed signal has a frequency domain representation with an **infinite bandwidth and discrete frequencies.**
+Non-periodic | The decomposed signal still has an infinite bandwidth but the frequencies are continuous.
 
 ### Baseband transmission
 
@@ -178,12 +178,12 @@ sender.
 
 ### Noise
 
-| Type | Description |
-| --- | --- |
-| Thermal noise | Random motion of electrons in a wire which creates an extra signal not originally sent by the transmitter. |
-| Induced noise | Comes from sources such as motors & appliances. |
-| Crosstalk | An effect of one wire on the other. |
-| Impulse noise | A signal with high energy in a very short time that comes from power lines or lightning. |
+Type | Description
+--- | ---
+Thermal noise | Random motion of electrons in a wire which creates an extra signal not originally sent by the transmitter.
+Induced noise | Comes from sources such as motors & appliances.
+Crosstalk | An effect of one wire on the other.
+Impulse noise | A signal with high energy in a very short time that comes from power lines or lightning.
 
 The *Signal-to-Noise Ratio (SNR)* is actually the ratio of what is wanted
 (signal) to what is not wanted ().
@@ -239,10 +239,10 @@ Performance of network &mdash; How good is it?
 
 An increase in bandwidth in Hz means an increase in bandwidth in bps.
 
-| Measurement | Description |
-| --- | --- |
-| Bandwidth | Potential measure of a link data rate. |
-| Throughput | Actual measure of how fast we can send data. |
+Measurement | Description
+--- | ---
+Bandwidth | Potential measure of a link data rate.
+Throughput | Actual measure of how fast we can send data.
 
 ### Latency
 

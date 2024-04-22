@@ -31,18 +31,18 @@ them to the output lines.
 Telephone companies have traditionally multiplexed signals from lower-bandwidth
 lines onto higher-bandwidth lines.
 
-| Analog multiplexing hierarchy | Classification |
-| --- | --- |
-| 12 voice channels | Group |
-| 5 groups | Supergroup |
-| 10 supergroups | Master group |
-| 6 master groups | Jumbo group |
+Analog multiplexing hierarchy | Classification
+--- | ---
+12 voice channels | Group
+5 groups | Supergroup
+10 supergroups | Master group
+6 master groups | Jumbo group
 
 ### TDM
 
 **Time division multiplexing (TDM)** is a digital process that allows several
 connections to share the high bandwidth of a link. Instead of sharing a portion
-of the bandwidth as in FDM, **time is shared**. Each connection occupies a
+of the bandwidth as in FDM, **time is shared.** Each connection occupies a
 portion of time in the link.
 
 #### Synchronous TDM
@@ -58,10 +58,10 @@ TDM can be visualized as two fast-rotating switches, one on the multiplexing
 side and the other on the demultiplexing side. And the switch is
 **unsynchronized** and rotate at the same speed but in positive direction.
 
-| Side | Description |
-| --- | --- |
-| Multiplexing | As the switch open in front of a connection, this connection can send a unit of data onto the link. This process is called interleaving. |
-| Demultiplexing | As the switch open, the connection can receive a unit of data from the link. |
+Side | Description
+--- | ---
+Multiplexing | As the switch open in front of a connection, this connection can send a unit of data onto the link. This process is called interleaving.
+Demultiplexing | As the switch open, the connection can receive a unit of data from the link.
 
 If a source does not have data to send, the corresponding slot in the output
 frame is empty.
@@ -80,7 +80,7 @@ We can allocate more than 1 slot in a frame to a single input line.
 If bit rate of sources are not multiple integers of each other, we can make the
 highest input data rate the dominant data rate and then add dummy bits to the
 input lines with lower rates. This technique is called pulse stuffing, bit
-padding, or **bit stuffing**.
+padding, or **bit stuffing.**
 
 If the multiplexer and the de-multiplexer are not synchronized, a bit belonging
 to one channel may be received by the wrong channel. For this reason, one or
@@ -91,13 +91,13 @@ more synchronization bits are usually added to each frame.
 Telephone companies implement TDM through a hierarchy of digital signals called
 digital signal (DS) service of digital hierarchy.
 
-| Service | Description | Equation |
-| --- | --- | --- |
-| DS-0 | Single digital channel of $64$ Kbps. | $(2.400) . 8 \textsf{ bit} = 64,000 \sf \ bps$ |
-| DS-1 | $1,544$ Mbps source. | $$1,544 \textsf{ Mbps} = \underbrace{24 . 64 \textsf{ Kbps}}_\textsf{phone channels} + \underbrace{8 \textsf{ Kbps}}_\textsf{overhead}$$ |
-| DS-2 | $6,312$ Mbps source. | $6,312 \textsf{ Mbps} = 96 . 64 \textsf{ Kbps} + 168 \textsf{ Kbps}$ |
-| DS-3 | $44,376$ Mbps source. | $44,376 \textsf{ Mbps} = 672 . 64 \textsf{ Kbps} + 1,368 \textsf{ Kbps}$ |
-| DS-4 | $274,176$ Mbps source. | $274,176 \textsf{ Mbps} = 4,032 . 64 \textsf{ Kbps} + 16,128 \textsf{ Kbps}$ |
+Service | Description | Equation
+--- | --- | ---
+DS-0 | Single digital channel of $64$ Kbps. | $(2.400) . 8 \textsf{ bit} = 64,000 \sf \ bps$
+DS-1 | $1,544$ Mbps source. | $$1,544 \textsf{ Mbps} = \underbrace{24 . 64 \textsf{ Kbps}}_\textsf{phone channels} + \underbrace{8 \textsf{ Kbps}}_\textsf{overhead}$$
+DS-2 | $6,312$ Mbps source. | $6,312 \textsf{ Mbps} = 96 . 64 \textsf{ Kbps} + 168 \textsf{ Kbps}$
+DS-3 | $44,376$ Mbps source. | $44,376 \textsf{ Mbps} = 672 . 64 \textsf{ Kbps} + 1,368 \textsf{ Kbps}$
+DS-4 | $274,176$ Mbps source. | $274,176 \textsf{ Mbps} = 4,032 . 64 \textsf{ Kbps} + 16,128 \textsf{ Kbps}$
 
 ### T line
 

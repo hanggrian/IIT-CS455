@@ -1,8 +1,8 @@
 {
   "markdown-pdf.format": "Letter",
   "markdown-pdf.styles": [
-    "~/Documents/GitHub/markdown-pdf-styles/styles/column-two.css",
-    "~/Documents/GitHub/markdown-pdf-styles/cheatsheet.css",
+    "~/GitHub/markdown-pdf-styles/styles/column-two.css",
+    "~/GitHub/markdown-pdf-styles/cheatsheet.css",
   ],
   "markdown-pdf.margin.top": "0.25in",
   "markdown-pdf.margin.bottom": "0.25in",

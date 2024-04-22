@@ -10,11 +10,11 @@
 > What are advantages and disadvantages of a fully connected mesh topology of a
   network?
 
-| Advantages | Disadvantages |
-| --- | --- |
-| High redundancy because each connection is handled individually. | Expensive and difficult to install and maintain. |
-| Network expansion doesn't require setup or disruption. | Network requires a high traffic capability. |
-| No need for a centralized system. | Consumes more power than other topologies. |
+Advantages | Disadvantages
+--- | ---
+High redundancy because each connection is handled individually. | Expensive and difficult to install and maintain.
+Network expansion doesn't require setup or disruption. | Network requires a high traffic capability.
+No need for a centralized system. | Consumes more power than other topologies.
 
 ## Problem 2
 
@@ -33,12 +33,12 @@ $$
 
 Illustrated as:
 
-| Binary | Decimal | Binary | Decimal | Binary | Decimal | Binary | Decimal |
-| ---: | :--- | ---: | :--- | ---: | :--- | ---: | :--- |
-| `0000` | 0 | `0100` | 4 | `1000` | 8 | `1100` | 12 |
-| `0001` | 1 | `0101` | 5 | `1001` | 9 | `1101` | 13 |
-| `0010` | 2 | `0110` | 6 | `1010` | 10 | `1110` | 14 |
-| `0011` | 3 | `0111` | 7 | `1011` | 11 | `1111` | 15 |
+Binary | Decimal | Binary | Decimal | Binary | Decimal | Binary | Decimal
+---: | :--- | ---: | :--- | ---: | :--- | ---: | :---
+`0000` | 0 | `0100` | 4 | `1000` | 8 | `1100` | 12
+`0001` | 1 | `0101` | 5 | `1001` | 9 | `1101` | 13
+`0010` | 2 | `0110` | 6 | `1010` | 10 | `1110` | 14
+`0011` | 3 | `0111` | 7 | `1011` | 11 | `1111` | 15
 
 ## Problem 3
 
@@ -82,7 +82,7 @@ $$
 
 Illustrated as:
 
-![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/hw1_analog.png)
+![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/assignments/hw1/encoding_analog.svg)
 
 ## Problem 5
 
@@ -229,15 +229,15 @@ $$
 \end{array}
 $$
 
-Therefore, **propagation time is negligible**.
+Therefore, **propagation time is negligible.**
 
 ## Problem 12
 
 > The data input stream is `01001011`. Draw a figure presenting the output from:
 >
-> 1. AMI encoder
-> 2. Differential Manchester encoder
+> 1.  AMI encoder
+> 1.  Differential Manchester encoder
 
-![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/hw1_digital.png)
+![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/assignments/hw1/encoding_digital.svg)
 
-[View diagram file](https://github.com/hendraanggrian/IIT-CS455/blob/main/lines/hw1.drawio)
+[View diagram file](https://github.com/hendraanggrian/IIT-CS455/blob/main/assignments/hw1/encoding.drawio)

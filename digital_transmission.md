@@ -6,21 +6,21 @@
 
 Line coding is the process of converting digital data to digital signals.
 
-| Source | Description |
-| --- | --- |
-| Sender | Digital data are encoded into a digital signal. |
-| Receiver | Digital data are recreated by decoding the digital signal. |
+Source | Description
+--- | ---
+Sender | Digital data are encoded into a digital signal.
+Receiver | Digital data are recreated by decoding the digital signal.
 
-| Data element | Signal element |
-| --- | --- |
-| The smallest entity that can represent a piece of information; this is the **bit**. | The shortest unit of a digital signal. |
-| What we need to send. | What we can send. |
-| Are being carried. | Are the carriers. |
+Data element | Signal element
+--- | ---
+The smallest entity that can represent a piece of information; this is the **bit.** | The shortest unit of a digital signal.
+What we need to send. | What we can send.
+Are being carried. | Are the carriers.
 
 #### Data rate vs signal rate
 
 The data rate defines the number of data elements sent in 1s (bit rate). The
-**signal rate** is called the **baud rate**.
+**signal rate** is called the **baud rate.**
 
 A **baud** is a signaling event or the change in the amplitude or the frequency
 or phase of the carrier wave.
@@ -78,16 +78,16 @@ called NRZ because the signal does not return to zero at the middle of the bit.
 
 #### Polar scheme
 
-In a **polar scheme**, the voltages are on **both sides of the same axis**. For
+In a **polar scheme**, the voltages are on **both sides of the same axis.** For
 example, the voltage level for $0$ can be positive and the voltage level for $1$
 can be negative.
 
 #### Two versions of NRZ
 
-| Variant | Description |
-| --- | --- |
-| NRZ-Level | The level of voltage determines the value of the bit. |
-| NRZ-Invert | The change or lack of change in the level of the voltage determines the value of the bit. **If there is no change the bit is $\bf 0$, if there is a change the bit is $\bf 1$**. |
+Variant | Description
+--- | ---
+NRZ-Level | The level of voltage determines the value of the bit.
+NRZ-Invert | The change or lack of change in the level of the voltage determines the value of the bit. **If there is no change the bit is $\bf 0$, if there is a change the bit is $\bf 1$.**
 
 The *Return-to-Zero (RZ)* scheme uses three values: positive, negative, and
 zero. In RZ, the signal changes not between but during the bit.
@@ -103,10 +103,10 @@ the bit but the bit values are determined at the beginning of the bit. **If the
 next bit is $\bf 0$ there is inversion, if the next bit is $\bf 1$ there is
 none.**
 
-| | `0` | `1` |
-| --- | --- | --- |
-| Manchester | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/encoding_m_0.png) | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/encoding_m_1.png) |
-| Differential Manchester | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/encoding_dm_0.png) | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/lines/encoding_dm_1.png) |
+| | `0` | `1`
+--- | --- | ---
+Manchester | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/encoding_m0.svg) | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/encoding_m1.svg)
+Differential Manchester | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/encoding_dm0.svg) | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/encoding_dm1.svg)
 
 #### Multilevel binary
 
@@ -168,9 +168,9 @@ are no more than 3 consecutive zeros.
 
 ## Analog-to-digital conversion
 
-1. The analog signal is sampled.
-2. The sampled signal is quantized.
-3. The quantized values are encoded as streams of bits.
+1.  The analog signal is sampled.
+1.  The sampled signal is quantized.
+1.  The quantized values are encoded as streams of bits.
 
 ### Sampling
 
@@ -181,10 +181,10 @@ The analog signal is sampled every $T$ s where $T$ s is every sampling period.
 In order to reproduce the original analog signal the sampling rate must be at
 least twice the highest frequency in the original signal.
 
-| Analog signal | Bandwidth value |
-| --- | --- |
-| Low-pass | The same as the highest frequency. |
-| Bandpass | Lower than the value of maximum frequency. |
+Analog signal | Bandwidth value
+--- | ---
+Low-pass | The same as the highest frequency.
+Bandpass | Lower than the value of maximum frequency.
 
 $$
 \begin{array}{rcl}
@@ -207,16 +207,16 @@ $$
 
 ### Quantization
 
-1. We assume that the original analog signal has ranges from $V_\textsf{min}$
+1.  We assume that the original analog signal has ranges from $V_\textsf{min}$
   to $V_\textsf{max}$.
-2. We divide this range into $L$ zones each of height $\Delta$.
+1.  We divide this range into $L$ zones each of height $\Delta$.
 
 $$
 \Delta = \frac{V_\textsf{min}-V\textsf{max}}{L}
 $$
 
-3. We assign quantized values of $0$ to $L-1$ to the midpoint of each zone.
-4. We approximate the value of each sample by the quantized values.
+3.  We assign quantized values of $0$ to $L-1$ to the midpoint of each zone.
+3.  We approximate the value of each sample by the quantized values.
 
 The choice of $L$, the number of levels depends on the range of the analog
 signal and how accurately we need to recover the signal.

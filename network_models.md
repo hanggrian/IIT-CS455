@@ -13,13 +13,13 @@ Each layers calls upon the services of the layer just below it. Layer 3, for
 example, uses the servies provided by layer 2 and provides the services for
 layer 4.
 
-| Layer | Duties |
-| --- | --- |
-| Application | E-mail, web browsing, file transfer. |
-| Transport | Port addressing, segmentation and reassembly, connection control, flow control, error control. |
-| Network | Logical addressing, routing, internetworking, packetizing, fragmentation, address resolution. |
-| Data link | Framing, physical addressing, flow control, error control, access control. |
-| Physical | Physical characteristics of interfaces and media, representation of bits, data rate, synchronization of bits. |
+Layer | Duties
+--- | ---
+Application | E-mail, web browsing, file transfer.
+Transport | Port addressing, segmentation and reassembly, connection control, flow control, error control.
+Network | Logical addressing, routing, internetworking, packetizing, fragmentation, address resolution.
+Data link | Framing, physical addressing, flow control, error control, access control.
+Physical | Physical characteristics of interfaces and media, representation of bits, data rate, synchronization of bits.
 
 ## OSI model
 
@@ -27,12 +27,12 @@ layer 4.
 organization for standardization. The OSI model is a theoretical model designed
 to show how a protocol stack should be implemented.
 
-| Layer | Description |
-| --- | --- |
-| Application | &ndash; |
-| **Presentation** | Translates data to a standard format, manages encryption and data compression. |
-| **Session** | Establishes sessions between communicating applications on the communicating computers (devices). |
-| Transport | &ndash; |
-| Network | &ndash; |
-| Data link | &ndash; |
-| Physical | &ndash; |
+Layer | Description
+--- | ---
+Application | &ndash;
+**Presentation** | Translates data to a standard format, manages encryption and data compression.
+**Session** | Establishes sessions between communicating applications on the communicating computers (devices).
+Transport | &ndash;
+Network | &ndash;
+Data link | &ndash;
+Physical | &ndash;

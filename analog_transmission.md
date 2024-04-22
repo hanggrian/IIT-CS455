@@ -2,13 +2,13 @@
 
 ## Digital-to-analog conversion
 
-| Modulation | Max bits | Modulation | Max bits |
-| ---: | :--- | ---: | :--- |
-| BPSK | $1$ | 8-PSK | $3$ |
-| QPSK | $2$ | 16-QAM | $4$ |
-| 4-QAM | $2$ | 16-PSK | $4$ |
-| D-BPSK | $1$ | 64-QAM | $6$ |
-| D-QPSK | $2$ | 32-PSK | $5$ |
+Modulation | Max bits | Modulation | Max bits
+---: | :--- | ---: | :---
+BPSK | $1$ | 8-PSK | $3$
+QPSK | $2$ | 16-QAM | $4$
+4-QAM | $2$ | 16-PSK | $4$
+D-BPSK | $1$ | 64-QAM | $6$
+D-QPSK | $2$ | 32-PSK | $5$
 
 Digital-to-analog conversion is the process of changing one of the
 characteristics of an analog signal based on the information in digital data.
@@ -32,14 +32,14 @@ $$
 $$
 
 The sending device produces a high-frequency signal called the **carrier
-signal**. Digital information changes the carrier signal by modifying one or
+signal.** Digital information changes the carrier signal by modifying one or
 more of its characteristics (amplitude, frequency, or phase). This kind of
-modification is called **modulation**.
+modification is called **modulation.**
 
 ### Amplitude shift keying
 
 In *amplitude shift keying (ASK)*, the **amplitude** of the carrier signal **is
-varied**. Both frequency and the phase remain constant.
+varied.** Both frequency and the phase remain constant.
 
 #### Binary ASK
 
@@ -85,10 +85,10 @@ $$
 In *Binary FSK (BFSK)*, we have selected two carrier frequencies $f_1$
 and $f_2$.
 
-| Carrier | Data element | Representation |
-| --- | --- | --- |
-| First | `0` | $f_1$ |
-| Second | `1` | $f_2$ |
+Carrier | Data element | Representation
+--- | --- | ---
+First | `0` | $f_1$
+Second | `1` | $f_2$
 
 $$
 \begin{array}{rcl}
@@ -175,10 +175,10 @@ of $0 \degree$ and the other with the phase of $180 \degree$.
 the compliment of the signal element with phase $0 \degree$. The polar NRZ
 signal is multiplied by the carrier signal.
 
-| Bit | Representation |
-| --- | --- |
-| `0` | $180 \degree$ |
-| `1` | $0 \degree$ |
+Bit | Representation
+--- | ---
+`0` | $180 \degree$
+`1` | $0 \degree$
 
 #### Quadrature PSK
 
@@ -199,15 +199,15 @@ signal element when we are using two carriers. The length of the vector that
 connect the point to the origin is the amplitude of the signal element, the
 angle, the vector makes with the $X$ axis is the phase of the signal element.
 
-| | $X$-axis | $Y$-axis |
-| --- | --- | --- |
-| Related to | In-phase career. | Quadrature career. |
-| Projection of the point | Defines the amplitude of the in-phase component. | Defines the amplitude of the quadrature component. |
+| | $X$-axis | $Y$-axis
+--- | --- | ---
+Related to | In-phase career. | Quadrature career.
+Projection of the point | Defines the amplitude of the in-phase component. | Defines the amplitude of the quadrature component.
 
 ## Analog-to-analog conversion
 
 Analog modulation is the representation of **analog information** by an **analog
-signal**. Modulation is needed if only a bandpass channel is available.
+signal.** Modulation is needed if only a bandpass channel is available.
 
 ### AM
 
