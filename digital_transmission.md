@@ -105,8 +105,8 @@ none.**
 
 | | `0` | `1`
 --- | --- | ---
-Manchester | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/encoding_m0.svg) | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/encoding_m1.svg)
-Differential Manchester | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/encoding_dm0.svg) | ![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/encoding_dm1.svg)
+Manchester | ![](https://github.com/hanggrian/IIT-CS455/raw/assets/encoding_m0.svg) | ![](https://github.com/hanggrian/IIT-CS455/raw/assets/encoding_m1.svg)
+Differential Manchester | ![](https://github.com/hanggrian/IIT-CS455/raw/assets/encoding_dm0.svg) | ![](https://github.com/hanggrian/IIT-CS455/raw/assets/encoding_dm1.svg)
 
 #### Multilevel binary
 

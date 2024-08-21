@@ -28,7 +28,7 @@ UID:IIT-CS455-exam2
 DTSTART;TZID=America/Chicago:20230623T123000
 DTEND;TZID=America/Chicago:20230623T140000
 SUMMARY:CS455 - Final exam
-DESCRIPTION:https://github.com/hendraanggrian/IIT-CS455/
+DESCRIPTION:https://github.com/hanggrian/IIT-CS455/
 LOCATION:Stuart Building 113
 BEGIN:VALARM
 ACTION:DISPLAY

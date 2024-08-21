@@ -28,7 +28,7 @@ UID:IIT-CS455-exam1
 DTSTART;TZID=America/Chicago:20230607T103000
 DTEND;TZID=America/Chicago:20230607T123000
 SUMMARY:CS455 - Mid exam
-DESCRIPTION:https://github.com/hendraanggrian/IIT-CS455/
+DESCRIPTION:https://github.com/hanggrian/IIT-CS455/
 LOCATION:Stuart Building 113
 BEGIN:VALARM
 ACTION:DISPLAY

@@ -3,7 +3,7 @@
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$']] }, messageStyle: 'none' });</script>
 
-# [Homework 1](https://github.com/hendraanggrian/IIT-CS455/blob/assets/assignments/hw1.pdf)
+# [Homework 1](https://github.com/hanggrian/IIT-CS455/blob/assets/assignments/hw1.pdf)
 
 ## Problem 1
 
@@ -21,7 +21,7 @@ No need for a centralized system. | Consumes more power than other topologies.
 > We would like to send 4 bits per level of a digital signal. How many signal
   level are needed?
 
-**Using [digital signals](https://github.com/hendraanggrian/IIT-CS455/blob/main/signals.md#digital-signals)**:
+**Using [digital signals](https://github.com/hanggrian/IIT-CS455/blob/main/signals.md#digital-signals)**:
 
 $$
 \begin{array}{rcl}
@@ -46,7 +46,7 @@ Binary | Decimal | Binary | Decimal | Binary | Decimal | Binary | Decimal
   pixel uses $1026$ colors, how many bits are needed to send the complete
   contents of a screen?
 
-**Using [bit rate](https://github.com/hendraanggrian/IIT-CS455/blob/main/signals.md#bit-rate)**:
+**Using [bit rate](https://github.com/hanggrian/IIT-CS455/blob/main/signals.md#bit-rate)**:
 
 $$
 \begin{array}{rcl}
@@ -63,7 +63,7 @@ $$
   for the superposition of two such sine waves $f(t) = s(t) + s(t)$ and draw its
   time and frequency domain plots ($t$ denotes time).
 
-**Using [sine waves](https://github.com/hendraanggrian/IIT-CS455/blob/main/signals.md#sine-waves)**:
+**Using [sine waves](https://github.com/hanggrian/IIT-CS455/blob/main/signals.md#sine-waves)**:
 
 $$
 \begin{array}{rcl}
@@ -82,7 +82,7 @@ $$
 
 Illustrated as:
 
-![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/assignments/hw1/encoding_analog.svg)
+![](https://github.com/hanggrian/IIT-CS455/raw/assets/assignments/hw1/encoding_analog.svg)
 
 ## Problem 5
 
@@ -101,7 +101,7 @@ Illustrated as:
     C = B \frac{SNR_{dB}}{3}
   $$
 
-**Using [noise](https://github.com/hendraanggrian/IIT-CS455/blob/main/signals.md#noise)**:
+**Using [noise](https://github.com/hanggrian/IIT-CS455/blob/main/signals.md#noise)**:
 
 $$
 \begin{array}{rcl}
@@ -110,7 +110,7 @@ $$
 \end{array}
 $$
 
-**Using [Shannon capacity](https://github.com/hendraanggrian/IIT-CS455/blob/main/signals.md#noisy-channel-shannon-capacity)**:
+**Using [Shannon capacity](https://github.com/hanggrian/IIT-CS455/blob/main/signals.md#noisy-channel-shannon-capacity)**:
 
 $$
 C = B . \log_2{(1 + SNR)}
@@ -137,7 +137,7 @@ $$
   is amplified by $15$ dB. The power of the signal at the source $A$ is $1$ mW.
   What is the power of the signal at the destination $D$?
 
-**Using [amplification](https://github.com/hendraanggrian/IIT-CS455/blob/main/signals.md#amplification)** A &rarr; B:
+**Using [amplification](https://github.com/hanggrian/IIT-CS455/blob/main/signals.md#amplification)** A &rarr; B:
 
 $$
 \begin{array}{rcl}
@@ -147,7 +147,7 @@ $$
 \end{array}
 $$
 
-**Using [attenuation](https://github.com/hendraanggrian/IIT-CS455/blob/main/signals.md#attenuation)** B &rarr; C:
+**Using [attenuation](https://github.com/hanggrian/IIT-CS455/blob/main/signals.md#attenuation)** B &rarr; C:
 
 $$
 \begin{array}{rcl}
@@ -207,7 +207,7 @@ hardware like MAC address.
   speed of the signal is $2 \times 10^8$ m/s. The link has a bandwidth of $5$
   Mbps. Which component of this delay is dominant? Which one is negligible?
 
-**Using [propagation time](https://github.com/hendraanggrian/IIT-CS455/blob/main/signals.md#propagation-time)**:
+**Using [propagation time](https://github.com/hanggrian/IIT-CS455/blob/main/signals.md#propagation-time)**:
 
 $$
 \begin{array}{rcl}
@@ -218,7 +218,7 @@ $$
 \end{array}
 $$
 
-**Using [transmission time](https://github.com/hendraanggrian/IIT-CS455/blob/main/signals.md#transmission-time)**:
+**Using [transmission time](https://github.com/hanggrian/IIT-CS455/blob/main/signals.md#transmission-time)**:
 
 $$
 \begin{array}{rcl}
@@ -238,6 +238,6 @@ Therefore, **propagation time is negligible.**
 > 1.  AMI encoder
 > 1.  Differential Manchester encoder
 
-![](https://github.com/hendraanggrian/IIT-CS455/raw/assets/assignments/hw1/encoding_digital.svg)
+![](https://github.com/hanggrian/IIT-CS455/raw/assets/assignments/hw1/encoding_digital.svg)
 
-[View diagram file](https://github.com/hendraanggrian/IIT-CS455/blob/main/assignments/hw1/encoding.drawio)
+[View diagram file](https://github.com/hanggrian/IIT-CS455/blob/main/assignments/hw1/encoding.drawio)

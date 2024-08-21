@@ -3,7 +3,7 @@
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$']] }, messageStyle: 'none' });</script>
 
-# [Homework 2](https://github.com/hendraanggrian/IIT-CS455/blob/assets/assignments/hw2.pdf)
+# [Homework 2](https://github.com/hanggrian/IIT-CS455/blob/assets/assignments/hw2.pdf)
 
 ## Problem 1
 
@@ -18,7 +18,7 @@ frequency, or phase.
 > Consider a low-pass channel with the carrier frequency of $15$ kHz. What is
   the BASK bit rate if $d=0.5$?
 
-**Using [Bandwidth for ASK](https://github.com/hendraanggrian/IIT-CS455/blob/main/analog_transmission.md#bandwidth-for-ask)**:
+**Using [Bandwidth for ASK](https://github.com/hanggrian/IIT-CS455/blob/main/analog_transmission.md#bandwidth-for-ask)**:
 
 $$
 \begin{array}{rcl}
@@ -76,7 +76,7 @@ their carriers and passing them to the output lines.
   The lowest frequency of this signal is $100$ kHz and its bandwidth is $200$
   kHz. What is the bit rate?
 
-**Using [Nyquist theorem](https://github.com/hendraanggrian/IIT-CS455/blob/main/digital_transmission.md#nyquist-theorem)**:
+**Using [Nyquist theorem](https://github.com/hanggrian/IIT-CS455/blob/main/digital_transmission.md#nyquist-theorem)**:
 
 $$
 \begin{array}{rcl}
@@ -126,7 +126,7 @@ Demodulate | Modulated signal &rarr; Recovered binary data
   sender-receiver pairs from $1$ to $8$. What is the resulting expanded
   bandwidth $B2$?
 
-**Using [FHSS](https://github.com/hendraanggrian/IIT-CS455/blob/main/bandwidth_utilization.md#fhss)**:
+**Using [FHSS](https://github.com/hanggrian/IIT-CS455/blob/main/bandwidth_utilization.md#fhss)**:
 
 $$
 \begin{array}{rcl}
